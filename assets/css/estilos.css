@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212222;
+}
+
+/*--- Header ---*/
+.navbar {
+    background-color: #b50000;
+    width: 100%;
+    display: flex;
+}
+
+.navbar-list {
+    color: white;
+    display: flex;
+    justify-content: end;
+}
