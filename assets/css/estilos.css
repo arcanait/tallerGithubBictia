@@ -6,6 +6,7 @@
 
 body {
     background-color: #212222;
+    font-family: sans-serif;
 }
 
 /*--- Header ---*/
@@ -13,10 +14,94 @@ body {
     background-color: #b50000;
     width: 100%;
     display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
+
+.contacto-container {
+    display: flex;
+    margin-top: .5em;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 1em;
+    color: white;
+}
+
+.contacto-link{
+    margin: 1em;
+    color: white;
+    text-decoration: none;
+}
+
+.contacto-list {
+    display: flex;
+}
+
+.contacto-item {
+    color: white;
+    list-style: none;
+    margin: 1em;
+}
+
+/* .contacto-item:hover {
+    cursor: pointer;
+} */
+
 
 .navbar-list {
     color: white;
     display: flex;
     justify-content: end;
+}
+
+.navbar-item{
+    /* background-color: #580202; */
+    list-style: none;
+    padding: .6em;
+    margin: 1em;
+    /* border: 1px solid white; */
+    border-radius: 10%;
+}
+
+.navbar-item:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #b50000;
+}
+
+.illustration-container{
+    background-color: #b50000;
+    height: 70vh;
+    display: flex;
+    padding: 0 5%;
+}
+
+.illustration {
+    width: 30vw;
+    height: 60vh;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.illustration-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.illustration-text-a {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.illustration-text-b {
+    font-size: 2em;
+    margin-top: 1em;
 }
