@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 
 body {
     background-color: #212222;
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*--- Header ---*/
@@ -18,7 +20,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .contacto-container {
@@ -49,38 +51,25 @@ body {
     margin: 1em;
 }
 
-/* .contacto-item:hover {
+.contacto-item:hover {
     cursor: pointer;
-} */
+} 
 
 
-.navbar-list {
+ .navbar-list {
     color: white;
     display: flex;
     justify-content: end;
 }
 
-.navbar-item{
-    /* background-color: #580202; */
+ .navbar-item{
     list-style: none;
     padding: .6em;
     margin: 1em;
-    /* border: 1px solid white; */
     border-radius: 10%;
-}
+} 
 
-.angle-left {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #b50000;
-    font-size: 40px;
-
-    height: 40px;
-    width: 40px;
-
+.navbar-item:hover {
     cursor: pointer;
     background-color: white;
     color: #b50000;
@@ -90,16 +79,7 @@ body {
     background-color: #b50000;
     height: 70vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: #b50000;
-    font-size: 40px;
-
-    height: 40px;
-    width: 40px;
-
-    cursor: pointer
+    padding: 0 5%;
 }
 
 .illustration {
@@ -117,11 +97,212 @@ body {
     justify-content: center;
 }
 
+.illustration-text-a {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.illustration-text-b {
+    font-size: 2em;
+    margin-top: 1em;
+}
+.relative-contenedor {
+    position: relative;
+    border-radius: 20px;
+}
+.fondo {
+    height: 400px;
+
+    background-image: url(../imagenes/img-parallax.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-img {
+    font-size: 25px;
+    padding: 1em;
+
+    background-color: rgba(7, 7, 7, 0.233);
+    color: white;
+
+    position: absolute;
+    top: 200px;
+    left: 320px;
+
+}
+
+.main-tittle {
+    color: white;
+
+    font-size: 50px;
+    text-align: center;
+
+    padding: 0.5em;
+
+}
+
+.main-fila-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+
+    align-content: center;
+    justify-content: center;
+}
+
+.main-columnas-12,
+.main-columnas-11,
+.main-columnas-10,
+.main-columnas-9,
+.main-columnas-8,
+.main-columnas-7,
+.main-columnas-6,
+.main-columnas-5,
+.main-columnas-4,
+.main-columnas-3,
+.main-columnas-2,
+.main-columnas-1 {
+    /* Espacio entre columnas */
+    padding: 0 10px;
+}
+
+.main-columnas-7 {
+    flex-basis: 58.33%;
+    width: 100%;
+    height: 100%;
+}
+
+.main-columnas-5 {
+    flex-basis: 41.66%;
+}
+
+.main-columnas-7,
+.main-columnas-5 {
+    /* Espacio entre columnas */
+    padding: 10px;
+
+}
+
+.box-texto {
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+
+    margin: 4em;
+}
+
+
+
+.box-bloque-main {
+    background-color: rgba(7, 7, 7, 0.233);
+    color: white;
+
+    text-align: center;
+
+    width: 80%;
+    margin: auto;
+    padding: 2em;
+    border-radius: 20px;
+
+}
+
+.texto-categorias {
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.carrusel {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.carrusel-prev {
+    position: absolute;
+
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+.angle-left {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #b50000;
+    font-size: 40px;
+
+    height: 40px;
+    width: 40px;
+
+    cursor: pointer;
+
+}
+
+.carrusel-next {
+    position: absolute;
+    right: 0;
+
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+
+
+}
+
+.angle-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #b50000;
+    font-size: 40px;
+
+    height: 40px;
+    width: 40px;
+
+    cursor: pointer
+}
+
+
+.grid-items {
+    flex: 1;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.grid-imagenes {
+    background-color: black;
+    border-radius: 10px;
+}
+
+.box-centro {
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 100%;
+}
+
 .img-hacer {
     width: 100%;
     min-height: 168px !important;
     object-fit: cover;
+
     border-radius: 10px;
+
     cursor: pointer;
 }
 
@@ -131,10 +312,6 @@ body {
     opacity: 0.7;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
 footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
